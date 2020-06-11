@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-HQFQLDemo/Pods-HQFQLDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${BUILT_PRODUCTS_DIR}/GZIP/GZIP.framework
+${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
+${BUILT_PRODUCTS_DIR}/YTKKeyValueStore/YTKKeyValueStore.framework

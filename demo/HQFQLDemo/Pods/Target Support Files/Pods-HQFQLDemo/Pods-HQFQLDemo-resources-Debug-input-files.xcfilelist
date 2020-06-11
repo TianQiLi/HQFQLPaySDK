@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-HQFQLDemo/Pods-HQFQLDemo-resources.sh
+${PODS_ROOT}/../../../FQLPaySDK/FQLPayResource.bundle
+${PODS_ROOT}/../../../FQLPaySDK/MGFaceIDIDCardResouce.bundle
+${PODS_ROOT}/../../../FQLPaySDK/MGFaceIDLiveCustomDetect.bundle

@@ -1,0 +1,11 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/FMDB" "${PODS_CONFIGURATION_BUILD_DIR}/GZIP" "${PODS_CONFIGURATION_BUILD_DIR}/MJExtension" "${PODS_CONFIGURATION_BUILD_DIR}/YTKKeyValueStore" "${PODS_ROOT}/../../../FQLPaySDK"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/GZIP/GZIP.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MJExtension/MJExtension.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YTKKeyValueStore/YTKKeyValueStore.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_LDFLAGS = $(inherited) -ObjC -l"resolv.9" -l"sqlite3" -l"stdc++" -l"z" -framework "AFNetworking" -framework "AdSupport" -framework "AddressBook" -framework "CFNetwork" -framework "Contacts" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMotion" -framework "CoreTelephony" -framework "FMDB" -framework "FQLPay" -framework "GZIP" -framework "MGFaceIDBaseKit" -framework "MGFaceIDIDCardKernelKit" -framework "MGFaceIDIDCardKit" -framework "MGFaceIDLiveDetect" -framework "MJExtension" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "YTKKeyValueStore"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
+VALID_ARCHS = armv7s arm64 x86_64 arm64e

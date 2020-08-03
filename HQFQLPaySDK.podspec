@@ -1,9 +1,10 @@
 Pod::Spec.new do |s|
   s.name         = "HQFQLPaySDK"
   s.version      = "1.5.3.0"
-  s.summary      = "乐卡支付SDK"
+  s.summary      = "hq乐卡支付SDK"
   s.homepage     = "https://github.com/TianQiLi/HQFQLPaySDK"
   s.platform     = :ios, "8.0"
+  s.authors = "tq"
   s.source       = { :git => "https://github.com/TianQiLi/HQFQLPaySDK.git", :tag =>"#{s.version}"}
   s.vendored_frameworks = 'FQLPaySDK/FQLPay.framework','FQLPaySDK/MGFaceIDBaseKit.framework','FQLPaySDK/MGFaceIDIDCardKernelKit.framework','FQLPaySDK/MGFaceIDIDCardKit.framework','FQLPaySDK/MGFaceIDLiveDetect.framework'
   s.requires_arc = true

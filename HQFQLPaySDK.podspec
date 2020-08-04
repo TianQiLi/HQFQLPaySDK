@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HQFQLPaySDK"
-  s.version      = "1.5.3.0"
+  s.version      = "1.5.3.1"
   s.summary      = "hq乐卡支付SDK"
   s.homepage     = "https://github.com/TianQiLi/HQFQLPaySDK"
   s.platform     = :ios, "8.0"

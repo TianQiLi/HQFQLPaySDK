@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   s.dependency  'YTKKeyValueStore', '~> 0.1.2'
   s.dependency  'MJExtension', '~> 3.1.0'
   s.dependency  'GZIP'
+  s.dependency  'WCDB','1.0.7.5'
 
 end
 

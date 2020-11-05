@@ -31,10 +31,17 @@ typedef enum : NSUInteger {
    didAudioSampleBuffer:(CMSampleBufferRef)sampleBuffer
          fromConnection:(AVCaptureConnection *)connection;
 
+- (void)mgCaptureOutput:(AVCaptureOutput *)captureOutput
+  didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
+         fromConnection:(AVCaptureConnection *)connection
+              cameraISO:(float)ISO
+            cameraTimer:(CMTime)time
+           lensAperture:(float)lensAperture;
+
 - (void)mgCaptureOutput:(AVCaptureOutput *)captureOutput error:(MGCameraErrorType)error;
 
 - (void)mgCaptureFinishVideoRecord:(NSString *)videoFilePathStr;
-
+- (void)mgCapturePrepareCompleteVideoRecord;
 - (void)mgCaptureFailedVideoRecord;
 
 @end

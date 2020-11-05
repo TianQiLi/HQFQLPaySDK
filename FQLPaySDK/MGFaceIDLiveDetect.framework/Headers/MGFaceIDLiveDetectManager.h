@@ -15,7 +15,7 @@
 @interface MGFaceIDLiveDetectManager : NSObject
 
 /**
- 初始化 FaceID 活体检测 Manager
+ 初始化 FaceID 活体检测 Manager，建议在子线程中调用该方法。
  由于 bizTokenStr 的唯一性，每一次调用 startMGFaceIDLiveDetectWithCurrentController:callback: 检测方法都需要重新初始化该 Manager.
 
  @param bizTokenStr 业务串号

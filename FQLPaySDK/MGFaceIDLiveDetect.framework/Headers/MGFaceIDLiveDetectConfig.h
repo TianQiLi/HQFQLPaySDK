@@ -18,7 +18,9 @@ typedef enum : NSUInteger {
     MGFaceIDLiveDetectErrorBizTokenDenied               = 4200,   //  传入的biz_token不符合要求
     MGFaceIDLiveDetectErrorAuthenticationFail           = 4200,   //  鉴权失败
     MGFaceIDLiveDetectErrorMobilePhoneNotSupport        = 4200,   //  手机不在支持列表里
-    MGFaceIDLiveDetectErrorSDKTooOld                    = 4200,   //  SDK版本过旧，已经不被支持
+    MGFaceIDLiveDetectErrorSDKTooOld                    = 4200,   //  MGFaceIDBaseKit基础模块版本过旧，已经不被支持
+    MGFaceIDLiveDetectErrorExceededRetryTimes           = 4200,   //  超过了重试次数
+    MGFaceIDLiveDetectErrorGetConfigFail                = 4200,   //  读取活体配置信息失败
     
     MGFaceIDLiveDetectErrorUserCancel                   = 6000,   //  用户取消活体检测
     MGFaceIDLiveDetectErrorNotResource                  = 6000,   //  未添加资源包

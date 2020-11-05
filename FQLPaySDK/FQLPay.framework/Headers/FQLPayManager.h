@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FQLFaceResultModel.h"
+#import "FQLFaceBizParams.h"
 
 typedef NS_ENUM(NSInteger, FQLPayResultCode) {
     FQLPayResultCode_Success = 0, // 支付成功
@@ -30,6 +32,23 @@ typedef NS_ENUM(NSInteger, FQLPayResultCode) {
  成功打开支付页面
  */
 - (void)onOpenSuccess;
+
+
+/**
+ 刷脸成功
+ 
+ @param faceResultModel 回调参数
+*/
+- (void)onFaceRecognizeSuccess:(FQLFaceResultModel* )faceResultModel;
+
+/**
+ 刷脸失败
+ 
+ @param code 错误码
+ @param msg 错误信息
+ @param extData 附加信息
+*/
+- (void)onFaceRecognizeFail:(NSInteger )code msg:(NSString* )msg extend:(NSDictionary* )extData;
 
 
 @optional
@@ -105,6 +124,9 @@ typedef NS_ENUM(NSInteger, FQLPayResultCode) {
 - (void)handleFqlPayOpenUrlStr:(NSString *)urlStr;
 
 
+
+#pragma mark - 刷脸
+- (void)startFaceRecognize:(FQLFaceBizParams*)params targetVC:(UIViewController *)vc;
 
 
 //用于模拟SDK Crash
